@@ -1,1 +1,51 @@
+= TUpac: **T**heme **U**npacker
+David Swindle <david@swindle.net>
+v0.1.0
+:description: The README file for the TUpac GitHub repository.
+:toc:
 
+== Introduction 
+
+*TUpac* is a "`package manager`" for KDE Plasma themes.  It is able to install and manage many kinds of Plasma themes with 
+minimal user effort required.
+
+=== The Problem
+
+KDE Plasma uses a multitude of different kinds of themes.  It is unpleasant to have to keep track of all of these themes,
+especially when installing a new one; you have to use the
+built-in Discover modules in System Settings--which are notably buggy & error-prone--and if the theme(s) you are looking for
+aren't available there, you have to visit the KDE Pling store
+and _manually_ extract the themes yourself!
+
+This process is much less than user-friendly--in fact, it should not
+be left up to the user at all!  Additionally, most actual "desktop themes" are in reality
+a combination of seven or eight different types of Plasma theme--a distinction which is confusing and unnecessary to make.  
+It is likely that the complications associated with the
+installation and management of desktop themes on Plasma are what drive many newcomers away from KDE software and even Linux-based operating systems in general.
+
+=== The Solution
+
+TUpac aims to solve this issue with a system called ThemePackage.  ThemePackage is an open specification (see spec.md for the current version of the spec) for a packaging
+system to combine multiple Plasma theme components into a single, unified package.  This package can then be installed 
+and managed as a single entity, eliminating the need for users to deal with individual theme components manually.  This will increase usability and user-friendliness across the board for users of Plasma desktops, and enable them to more fully enjoy Plasma's rich
+and flexible theming system.
+
+== Using TUpac
+
+.How to install a theme with TUpac
+. 	First, you must ensure that TUpac is installed and configured on your computer.
+	To do this, follow the instructions in the <<_install_tupac>> section.
+. 	Then, download a ThemePackage-compliant package file (referred to as a     
+	*tpackage file* or a *tpackage* due to its `.tpackage` file extension).  A
+	repository of tpackages can be found in the `REPOSITORY/` directory of this 
+	GitHub repo.
+. 	Now, run
+	`tupac <footheme>.tpackage`
+	replacing `<footheme>` with the name of your tpackage file.
+. 	When the confirmation prompt appears, enter `Y`.
+. 	Go to __**System Settings -> Themes**__ and, in each of the subsections, apply the
+ 	newly-installed themes.
+
+== Install TUpac
+
+TODO: Write this section
