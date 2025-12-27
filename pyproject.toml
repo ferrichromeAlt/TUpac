@@ -4,9 +4,34 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 [project]
-name = "TUpac"
+name = "tupac"
 version = "0.1.0"
-description = "TUpac (short for Theme Unpacker) is a package manager for KDE themes packaged as ThemePackage files.
+authors = [
+    { name = "David G. Swindle", email = "david@swindle.net" }
+]
+description = "TUpac (short for Theme Unpacker) is a package manager for KDE themes packaged as ThemePackage files."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = ["pyyaml"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX",
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Indented Audience :: End Users/Desktop",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: English",
+    "Topic :: Desktop Environment :: K Desktop Environment (KDE) :: Themes", # This is somehow already a category...
+]
+license = "(GPL-3.0-or-later AND GFDL-1.3-or-later)"
+license-files = ["LICENSES/*"]
+
+[project.urls]
+Homepage = "https://github.com/ferrichromeAlt/TUpac"
+Issues = "https://github.com/ferrichromeAlt/TUpac/issues"
+
+[build-system]
+requires = ["uv_build >= 0.9.18, <0.10.0"]
+build-backend = "uv_build"
+
+
