@@ -1,0 +1,12 @@
+
+# SPDX-FileCopyrightText: 2025 David Gregory Swindle <david@swindle.net>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+[project]
+name = "TUpac"
+version = "0.1.0"
+description = "TUpac (short for Theme Unpacker) is a package manager for KDE themes packaged as ThemePackage files.
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["pyyaml"]

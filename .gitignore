@@ -1,0 +1,13 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# SPDX-FileCopyrightText: 2025 David Swindle <david@swindle.net>
+# SPDX-License-Identifier: GPL-3.0-or-later
