@@ -1,0 +1,2 @@
+(B) 2025-12-27 Publish to PyPI @packaging @build
+(A) 2025-12-27 Write README.md @github
